@@ -3,13 +3,14 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div>
+    <>
      <Head>
     <title>Euonia | Home</title>
-    <meta name='keywords' content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
    </Head>
+   <div className='layer'>
     <div className='home'>
-      <div className='layer'>
+      
 
         <div className='home-container'>
          <div className='home-box-title'>
@@ -29,10 +30,15 @@ export default function Home() {
          <div className='home-img'>
          <Image src="/img.png" width={510} height={700} className="home-hero"/>
          </div>
-        </div>
 
-      </div>
+         
+        </div>
+        
     </div>
+  
+   
     </div>
-  )
+    
+    </>
+)
 }

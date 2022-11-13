@@ -1,43 +1,33 @@
-html,
 body {
   padding: 0;
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
 
 /* styling home section*/
 
-.home{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
+body{
+ 
   background-image: url("/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  color: white;
+  overflow-y: scroll;
 }
 
 .layer{
+  position: fixed;
   width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0,  0.9);
+  height: 100%;
+  background-color: rgba(37, 37, 37, 0.96);
+}
+
+
+.content{
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 10px;
+ 
 }
 
 .home-container{
@@ -123,9 +113,29 @@ a {
   justify-content: center;
   align-items: center;
   width: 40%;
+  margin-right: 7%;
 }
 
 .link{
-  margin-left: 10%;
+  margin-left: 8%;
   font-size: 21px;
+  color: #F5E8C7;
+  padding: 5px;
+  border-radius: 5%;
+  transition: 0.4s;
+}
+
+.link:hover{
+  background-color: #826F66;
+  color: white;
+}
+
+/*about styling*/
+
+.about{
+  position: absolute;
+  margin-top: 30%;
+  height: 100%;
+  width: 100vw;
+  z-index: 500;
 }
