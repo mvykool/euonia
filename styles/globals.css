@@ -16,10 +16,17 @@ body{
 }
 
 .layer{
+  top: 0;
   position: absolute;
   width: 100vw;
   height: 100%;
   background-color: rgba(37, 37, 37, 0.96);
+}
+
+.home{
+  padding-bottom: 10%;
+  margin-bottom: 10%;
+  height: 80%;
 }
 
 
@@ -28,7 +35,7 @@ body{
 }
 
 .home-box-title{
-  margin-top: 20%;
+  margin-top: 16%;
   margin-left: 10%;
 }
 
@@ -75,7 +82,7 @@ body{
 }
 
 .home-text h3{
-  margin-top: 7%;
+  margin-top: 5%;
   font-size: 20px;letter-spacing: 1px;
   margin-right: 35%;
 
@@ -89,7 +96,11 @@ body{
   position: fixed;
   height: 10%;
   width: 100vw;
-  z-index: 50;
+  z-index: 550;
+  background: rgba( 37, 37, 37, 0.5 );
+ backdrop-filter: blur( 8px );
+ -webkit-backdrop-filter: blur( 8px );
+ border-radius: 10px;
 }
 
 .nav-logo{
@@ -123,10 +134,297 @@ body{
 
 /*about styling*/
 
-.about{
+.wave{
   position: absolute;
+  top: 5%;
+  width: 100%;
+}
+.about{
+  background-color: #60514b;
+  color: black;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  height: 87%;
+}
+
+.about-hero{
+  position: absolute;
+  margin-top: 11%;
+  margin-left: 20%;
+}
+
+.about-title{
+  position: absolute;
+  margin-top: 12%;
+  right: 20%;
+  font-size: 60px;
+  letter-spacing: 1px;
+  color: #F5E8C7;
+}
+
+.about-box{
+  background-color:  rgba(0, 0, 0, 1);
+  position: absolute;
+  border-radius: 1%;
+  height: 37%;
+  width: 30%;
+  margin-left: 11.65%;
+  margin-top: 18.7%;
+}
+
+.about-text{
+  width: 30%;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 2%;
+  font-size: 20px;
+  position: absolute;
+  right: 10%;
+  margin-top: 25%;
+  color: white;
+}
+
+
+/*art grid*/
+
+.art{
+  background-color: #001220;
+  padding-bottom: 15%;
+}
+
+.wave-two{
+  width: 100%;
+  margin-top: -46%;
+}
+
+.art-title{
+  position: absolute;
+  margin-top: 26%;
+  font-size: 50px;
+  margin-left: 20%;
+}
+
+.art-title h1{
+  color: #F5E8C7;
+}
+
+
+.art-subtitle{
+  margin-top: -1%;
+  font-size: 17px;
+  margin-left: 10%;
+}
+
+
+.art-text{
+  width: 30%;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 2%;
+  font-size: 20px;
+  position: absolute;
+  right: 10%;
   margin-top: 30%;
-  height: 100%;
-  width: 100vw;
-  z-index: 500;
+  color: white;
+}
+
+.heroImageGrid {
+	position: relative;
+	overflow: hidden;
+  margin-left: 10%;
+  margin-top: 25%;
+	height: 30vw;
+  width: 80vw;
+  background-color: #001220;
+	margin-bottom: 40%x;
+}
+
+.heroImageGrid .container {
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	top: -20vw;
+	left: -8vw;
+	transform: rotateZ(45deg);
+	height: 100vw;
+	width: 107vw;
+}
+
+.heroImageGrid .container .column {
+	overflow: hidden;
+	position: relative;
+}
+
+.heroImageGrid .container .column:nth-of-type(1) {
+	border-right: 8px solid #001220;
+	width: 25%;
+	height: 66vw;
+}
+
+.heroImageGrid .container .column:nth-of-type(1):hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.heroImageGrid .container .column:nth-of-type(1):before {
+	position: absolute;
+	top: 3.4vw;
+	left: 5.4vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotateZ(-45deg);
+	content: "";
+	width: 48vw;
+	height: 40vw;
+	background-image: url(https://static.dw.com/image/60339368_605.jpg);
+}
+
+
+.heroImageGrid .container .column:nth-of-type(2) {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 75%;
+	height: 109.1vw;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row {
+	border-top: 8px solid #001220;
+}
+
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1) {
+	position: relative;
+	overflow: hidden;
+	height: 50vw;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1):hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1):before {
+	position: absolute;
+	top: -8.1vw;
+	left: -11.3vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotateZ(-45deg);
+	content: "";
+	width: 39vw;
+	height: 30vw;
+	background-image: url(https://i.pinimg.com/474x/fc/1b/df/fc1bdf19702bf4ef2dc6b3c3a94fc436--drawing-faces-poseidon.jpg);
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) {
+	display: flex;
+	height: 40.5vw;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
+	border-top: none;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) {
+	overflow: hidden;
+	width: 28%;
+  margin-top: 1%;
+  cursor: pointer;
+  background-size: 920px;
+  background-position:top;
+  background-repeat: no-repeat;
+  background-image: url(https://wallpaperaccess.com/full/2804565.jpg);
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	transform: rotateZ(-45deg);
+	position: relative;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text h6 {
+	position: absolute;
+	color: #001220;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text p {
+	text-align: right;
+	position: absolute;
+	color: #fff;
+	font-size: 0.9vw;
+	width: 18vw;
+	top: 23.5vw;
+	left: -3.5vw;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2) {
+	position: relative;
+	width: 70%;
+	border-left: 8px solid #001220;
+	overflow: hidden;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2):hover {
+	opacity: 0.75;
+
+}
+
+.main-pic:hover{
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2):before {
+	position: absolute;
+	top: 0;
+	left: -20vw;
+	width: 45.1vw;
+	height: 40vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotateZ(-45deg);
+	content: "";
+	background-image: url(https://i.pinimg.com/originals/12/4e/59/124e5998e7ac3a03ac2d53b59fd6eb38.jpg);
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
+	position: relative;
+	height: 18.6vw;
+	overflow: hidden;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3):hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+.heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3):before {
+	position: absolute;
+	top: 7.5vw;
+	left: 25vw;
+	width: 33vw;
+	height: 27vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotateZ(-45deg);
+	content: "";
+	background-image: url(https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+}
+
+
+/*Footer*/
+
+.footer{
+  margin-top: 3700px;
+  z-index: 550;
+  position: absolute;
+  background-color: #60514b;
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 10%;
+
 }

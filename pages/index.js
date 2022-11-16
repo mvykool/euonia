@@ -33,12 +33,58 @@ export default function Home() {
 
          
         </div>
-
-
-
-        
+   
     </section>
-  
+    
+   
+    <section className='about'>
+    <img src="/wave.svg"  className="wave"/>
+    <div className='about-title'>
+      <h1>About</h1>
+    </div>
+     <div>
+     <p className='about-text'>
+        Inspired website for the history, and art of Rome, and Ancient Greece.
+        Their legacy is still present to this day in many countries, language,
+        culture, philosophy.
+      <br/><br/>
+        The art of the statues, and sculptures is very present in this website,
+        Also information from great historical figures such as Julius Caesar, Plato,
+        Spartacus, and more.
+      </p>
+     </div>
+    <div className='about-box'></div>
+      <Image src="/roman.png" width={400} height={500} className="about-hero"/>
+    </section>
+   
+   <section className='art'>
+    <div className='art-title'>
+      <h1>
+      Artem
+      </h1>
+      <p className='art-subtitle'>[aar-tm] Latin</p>
+      <p className='art-subtitle'>(n.) Means Art in Latin</p>
+    </div>
+    <p className='art-text'>
+    The art of the ancient Greeks and Romans is called classical art. This name is used also to describe later periods in which artists looked for their inspiration to this ancient style. The Romans learned sculpture and painting largely from the Greeks and helped to transmit Greek art to later ages.
+    </p>
+    <img src="/wave2.svg" className='wave-two' />
+   <div class="heroImageGrid">
+	<div class="container">
+		<div class="column"></div>
+		<div class="column">
+			<div class="row"></div>
+			<div class="row">
+				<div className='main-pic'>
+					
+				</div>
+				<div></div>
+			</div>
+			<div class="row"></div>
+		</div>
+	</div>
+</div>
+   </section>
    
     </div>
     
