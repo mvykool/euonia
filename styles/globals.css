@@ -16,25 +16,15 @@ body{
 }
 
 .layer{
-  position: fixed;
+  position: absolute;
   width: 100vw;
   height: 100%;
   background-color: rgba(37, 37, 37, 0.96);
 }
 
 
-.content{
-  height: 100%;
-  scroll-snap-type: y mandatory;
-  scroll-padding: 10px;
- 
-}
-
 .home-container{
-  position: absolute;
   display: flex;
-  height: 90vh;
-  width: 100vw;
 }
 
 .home-box-title{
@@ -49,11 +39,12 @@ body{
 
 .home-img{
   background-color:  rgba(225, 225, 225, 0.6);
-  margin-top: 25%;
+  position: absolute;
   border-radius: 1%;
-  margin-left: -6%;
   height: 37%;
   width: 22%;
+  right: 15%;
+  margin-top: 25%;
 }
 
 .home-box{
@@ -70,7 +61,7 @@ body{
 .home-hero{
   z-index: 100;
   position: absolute;
-  margin-top: -20.4%;
+  margin-top: -84%;
 }
 
 .home-text{
