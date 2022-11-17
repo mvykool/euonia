@@ -28,7 +28,7 @@ export default function Home() {
          <div className='home-box'/>
          
          <div className='home-img'>
-         <Image src="/img.png" width={510} height={700} className="home-hero"/>
+         <Image src="/img.png" width={510} height={700} alt="image" className="home-hero"/>
          </div>
 
          
@@ -38,7 +38,7 @@ export default function Home() {
     
    
     <section className='about'>
-    <img src="/wave.svg"  className="wave"/>
+    <img src="/wave.svg"  className="wave" alt='wave'/>
     <div className='about-title'>
       <h1>About</h1>
     </div>
@@ -54,7 +54,7 @@ export default function Home() {
       </p>
      </div>
     <div className='about-box'></div>
-      <Image src="/roman.png" width={400} height={500} className="about-hero"/>
+      <Image src="/roman.png" width={400} height={500} alt='image' className="about-hero"/>
     </section>
    
    <section className='art'>
@@ -68,19 +68,19 @@ export default function Home() {
     <p className='art-text'>
     The art of the ancient Greeks and Romans is called classical art. This name is used also to describe later periods in which artists looked for their inspiration to this ancient style. The Romans learned sculpture and painting largely from the Greeks and helped to transmit Greek art to later ages.
     </p>
-    <img src="/wave2.svg" className='wave-two' />
-   <div class="heroImageGrid">
-	<div class="container">
-		<div class="column"></div>
-		<div class="column">
-			<div class="row"></div>
-			<div class="row">
+    <img src="/wave2.svg" className='wave-two' alt='wave2' />
+   <div className="heroImageGrid">
+	<div className="container">
+		<div className="column"></div>
+		<div className="column">
+			<div className="row"></div>
+			<div className="row">
 				<div className='main-pic'>
 					
 				</div>
 				<div></div>
 			</div>
-			<div class="row"></div>
+			<div className="row"></div>
 		</div>
 	</div>
 </div>
