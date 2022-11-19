@@ -1,6 +1,7 @@
 html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 
@@ -128,6 +129,7 @@ body{
   padding: 5px;
   border-radius: 5%;
   transition: 0.4s;
+  text-decoration: none;
 }
 
 .link:hover{
@@ -420,11 +422,11 @@ body{
 /*Footer*/
 
 .footer{
-  margin-top: 3655px;
+  margin-top: 3750px;
   z-index: 550;
   position: absolute;
   background-color: #60514b;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content:space-around;
   align-items: center;
@@ -516,6 +518,7 @@ body{
 
 .content-text-title{
   margin-top: 8%;
+  width: 60%;
   right: 20%;
   font-size: 38px;
   letter-spacing: 1px;
