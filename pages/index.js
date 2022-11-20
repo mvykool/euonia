@@ -1,5 +1,30 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { motion, whileInView, viewport } from 'framer-motion'
+
+
+/**framer motion variants */
+
+const sectionVariant = {
+  hidden : { opacity: 0},
+  show: { opacity: 1,
+  transition: { duration: 1, delay: 0.5}
+  }
+}
+
+const titleVar = {
+  hidden: { opacity: 0, x: -10000},
+  show: { opacity: 1, x: 0,
+  transition: { duration: 1}
+  }
+}
+
+const aboutVar = {
+  hidden: { opacity: 0, x: 300},
+  show: { opacity: 1, x: 0,
+  transition: { duration: 1}
+  }
+}
 
 export default function Home() {
   return (
@@ -8,12 +33,21 @@ export default function Home() {
     <title>Euonia | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
    </Head>
+   <div className='wrapper'>
+    
    <div className='layer'>
+    
     <section className='home'>
       
 
         <div className='home-container'>
-         <div className='home-box-title'>
+         <motion.div className='home-box-title'
+         variants={titleVar}
+         initial="hidden"
+         animate="show"
+         
+         
+         >
          <h1 className='home-title'>Euonia</h1>
           <div className='home-text'>
             <p>[u-noy-a] Greek</p>
@@ -23,14 +57,22 @@ export default function Home() {
             <h3>Discover and learn about ancient Greek and Roman art, their history, places, and Gods.  
              </h3>
           </div>
-         </div>
+         </motion.div>
 
-         <div className='home-box'/>
+       <motion.div
+       variants={sectionVariant}
+       initial="hidden"
+       whileInView="show"
+       viewport={{ once: true }}
+       
+       >
+       <div className='home-box'/>
          
          <div className='home-img'>
          <Image src="/img.png" width={510} height={700} alt="image" className="home-hero"/>
          </div>
 
+       </motion.div>
          
         </div>
    
@@ -39,11 +81,23 @@ export default function Home() {
    
     <section className='about'>
     <img src="/wave.svg"  className="wave" alt='wave'/>
+
+    
+    <motion.div
+    variants={aboutVar}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true }}
+    >
     <div className='about-title'>
       <h1>About</h1>
     </div>
-     <div>
-     <p className='about-text'>
+
+  
+    <div>
+
+    
+    <p className='about-text'>
         Inspired website for the history, and art of Rome, and Ancient Greece.
         Their legacy is still present to this day in many countries, language,
         culture, philosophy.
@@ -53,11 +107,32 @@ export default function Home() {
         Spartacus, and more.
       </p>
      </div>
+     </motion.div>
+    
+     <motion.div
+    variants={sectionVariant}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true }}
+    >
+    <div>
     <div className='about-box'></div>
       <Image src="/roman.png" width={400} height={500} alt='image' className="about-hero"/>
+      </div>
+      </motion.div>
     </section>
    
+
+
    <section className='art'>
+
+    <motion.div
+      variants={sectionVariant}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+
+    >
     <div className='art-title'>
       <h1>
       Artem
@@ -68,6 +143,8 @@ export default function Home() {
     <p className='art-text'>
     The art of the ancient Greeks and Romans is called classical art. This name is used also to describe later periods in which artists looked for their inspiration to this ancient style. The Romans learned sculpture and painting largely from the Greeks and helped to transmit Greek art to later ages.
     </p>
+
+    </motion.div>
     <img src="/wave2.svg" className='wave-two' alt='wave2' />
    <div className="heroImageGrid">
 	<div className="container">
@@ -84,8 +161,11 @@ export default function Home() {
 		</div>
 	</div>
 </div>
+
+
    </section>
    
+    </div>
     </div>
     
     </div>
