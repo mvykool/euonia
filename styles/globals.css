@@ -709,9 +709,250 @@ body{
   height:100vh;
   width: 100vw;
   background-color: #001220;
-  overflow-x: hidden;
   position: absolute;
-  z-index: 500;
-  padding-bottom:100%;
+
+}
+
+/*grid layout art */
+
+
+.layout-grid{
+  margin-top: 30%;
+  height: 120%;
+  background-color: #001220;
+  padding-bottom: 100%;
+  padding-top: 10%;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  grid-template-rows: 250px 120px 250px 220px 120px 250px 250px 120px 250px 250px;
+  justify-content: center;
+  gap: 2rem;
+  padding: 30px 5px;
+  padding-bottom: 50px;
+  margin-top: 20%;
+  grid-template-areas: "a b" "c b" "c d" "e f" "e g" "h g" "i j" "k j" "k l" "m m";
+}
+
+.a {
+  grid-area: a;
+  background-image: url(https://www.carpediemtours.com/wp-content/uploads/2022/04/River-Tiber-God-Statue.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+  border-radius: 1%;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.a:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+
+.b {
+  grid-area: b;
+  background-image: url(https://www.spectator.co.uk/wp-content/uploads/2021/01/Apollo-getty.jpg?w=730);
+  border-radius: 1%;
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.b:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+.c {
+  grid-area: c;
+  background-image: url(https://theobjective.com/wp-content/uploads/2017/05/la-capilla-sixtina-joya-del.jpg);
+  border-radius: 1%;
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.c:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+.d{
+  grid-area: d;
+  background-image: url(https://greekreporter.com/wp-content/uploads/2022/03/birth-of-venus-botticelli-1484-6-credit-public-domain.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1%;
+  cursor: pointer;
+  transition: 0.5s;
+  padding-top: 15px;
+}
+
+.d:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+.e{
+  grid-area: e;
+  background-image: url(https://i.pinimg.com/564x/f5/36/6b/f5366be0c35392b1ddca59b77bccb5e7.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1%;
+  transition: 0.5s;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.e:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+.f {
+  grid-area: f;
+  background-image: url(https://cdn.mos.cms.futurecdn.net/LotZ8WU7o6esocmzqrPC6S.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1%;
+  transition: 0.5s;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.f:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+.g {
+  grid-area: g;
+  background-image: url(https://t3.ftcdn.net/jpg/01/85/80/02/360_F_185800239_iVR2NqaqgPKDA3sJYzszhwZZjGWSsdaQ.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1%;
+  cursor: pointer;
+  transition: 0.5s;
+  padding-top: 15px;
+}
+
+.g:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+.h {
+  grid-area: h;
+  background-image: url(https://www.loleta.es/wp-content/uploads/2019/09/web-ROMA-IG1-5120282-copia-1080x675.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1%;
+  transition: 0.5s;
+  cursor: pointer;
+  padding-top: 15px;
+}
+.h:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+.i {
+  grid-area: i;
+  background-image: url(https://wallpaperaccess.com/full/2804528.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1%;
+  transition: 0.5s;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.i:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+.k {
+  grid-area: k;
+  background-image: url(https://wallpaperaccess.com/full/2527645.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1%;
+  cursor: pointer;
+  transition: 0.5s;
+  padding-top: 15px;
+}
+
+.k:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+.j {
+  grid-area: j;
+  background-image: url(https://wallpaperaccess.com/full/103270.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1%;
+  cursor: pointer;
+  transition: 0.5s;
+  padding-top: 15px;
+}
+
+.j:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+.l {
+  grid-area: l;
+  background-image: url(https://wallpaperaccess.com/full/1333097.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1%;
+  cursor: pointer;
+  padding-top: 15px;
+  transition: 0.5s;
+}
+
+.l:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
+}
+
+
+.m {
+  grid-area: m;
+  background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2013/12/20/200953/4c05cd7e71dda518ba32ed8fe41136ec-700.jpg);
+  background-position: 50px -50px;
+  background-size: cover;
+  border-radius: 1%;
+  cursor: pointer;
+  padding-top: 15px;
+  transition: 0.5s;
+}
+.m:hover{
+  transform: scale(1.05);
+  border: 1px solid #F5E8C7;
 }
 
