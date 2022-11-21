@@ -956,3 +956,438 @@ body{
   border: 1px solid #F5E8C7;
 }
 
+/*mobile Version*/
+
+
+/*home */
+
+@media (max-width: 480px){
+
+  body{
+ 
+    background-image: none;
+  }
+
+
+  .home{
+    padding-bottom: 5%;
+    height: 100%;
+  }
+  
+
+  .home-title{
+    font-size: 55px;
+  }
+  
+  .home-img{
+    background-color:  rgba(225, 225, 225, 0.6);
+    position: absolute;
+    border-radius: 1%;
+    bottom: 5%;
+    height: 30%;
+    width: 42%;
+    right: 35%;
+
+  }
+  
+  .home-box{
+    position: absolute;
+    border-radius: 1%;
+    bottom: 10%;
+    right: 18%;
+    z-index: 1;
+    height: 30%;
+    width: 45%;
+    background-color: #826F66;
+  }
+  
+  .home-hero{
+    z-index: 100;
+    position: absolute;
+    margin-top: -76%;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .home-text{
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+  
+  .home-text span{
+    font-weight: bold;
+    color: #826F66;
+  }
+  
+  .home-text h3{
+    margin-top: 6%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-right: 35%;
+  
+  }
+
+  /*about styling*/
+
+  .wave{
+    position: absolute;
+    top: 77%;
+    width: 100%;
+  }
+  .about{
+    background-color: #60514b;
+    color: black;
+    margin-top: 10%;
+    padding-bottom: 5%;
+    height: 130%;
+  }
+  
+  .about-hero{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    margin-top: 83.6%;
+    margin-left: 31.5%;
+  }
+  
+  .about-title{
+    position: absolute;
+    margin-top: 12%;
+    right: 22%;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #F5E8C7;
+  }
+  
+  .about-box{
+    background-color:  rgba(0, 0, 0, 1);
+    position: absolute;
+    border-radius: 1%;
+    height: 27%;
+    width: 60%;
+    margin-left: 21%;
+    margin-top: 98%;
+  }
+  
+  .about-text{
+    width: 50%;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 2%;
+    font-size: 18px;
+    position: absolute;
+    right: 20%;
+    margin-top: 180%;
+    color: white;
+  }
+  
+  
+/*art grid*/
+
+.art{
+  background-color: #001220;
+  height: 180%;
+  padding-bottom: 15%;
+}
+
+.wave-two{
+  width: 100%;
+  margin-top: -46%;
+}
+
+.art-title{
+  position: absolute;
+  margin-top: 26%;
+  font-size: 50px;
+  margin-left: 20%;
+}
+
+.art-title h1{
+  margin-top: 80%;
+  color: #F5E8C7;
+}
+
+
+.art-subtitle{
+  margin-top: 5%;
+  font-size: 17px;
+  margin-left: 10%;
+}
+
+
+.art-text{
+  width: 50%;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 2%;
+  font-size: 20px;
+  position: absolute;
+  right: 20%;
+  margin-top: 150%;
+  color: white;
+}
+
+.heroImageGrid {
+	position: relative;
+	overflow: hidden;
+  margin-left: 10%;
+  margin-top: 250%;
+	height: 100vw;
+  width: 80vw;
+  background-color: #001220;
+	margin-bottom: 40%x;
+}
+
+.heroImageGrid .container {
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	top: -20vw;
+	left: -8vw;
+	transform: rotateZ(45deg);
+	height: 100vw;
+	width: 107vw;
+}
+
+/* language mobile V*/
+
+/*language page*/
+
+.languages{
+  position: absolute;
+  background-color: #826F66;
+  height: 150vh;
+  width: 100vw;
+  padding-bottom: 10%;
+}
+
+.languages-top{
+  position: absolute;
+  margin-top: 15%;
+  width: 100vw;
+  height: 10vh;
+
+}
+
+.languages-title{
+  margin-left: 25%;
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: #F5E8C7;
+}
+
+
+.content-container-text{
+
+  height: 50%;
+  width: 100vw;
+  margin-top: 20%;  
+  display: flex;
+}
+
+.content-text{
+  margin-left: -28%;
+  width: 70%;
+  margin-top: 57%;
+}
+
+.content-box{
+  background-color: #001220;
+  width: 40%;
+  height: 10%;
+  margin-left: 30%;
+  margin-top: 28%;
+  border-radius: 1%;
+  position: absolute;
+}
+
+.content-pic{
+  width: 50%;
+  margin-top: 2%;
+  
+}
+
+.language-img{
+  position: absolute;
+  height: 12%;
+  margin-left: 42%;
+  margin-top: 22%;
+}
+
+.content-text-title{
+  margin-top: 30%;
+  width: 80%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #F5E8C7;
+}
+
+.content-text-p{
+  width: 80%;
+  letter-spacing: 1px;
+  margin: 2%;
+  font-size: 17px;
+  margin-top: 7%;
+  color: white;
+}
+
+/*section two*/
+
+.wave-language{
+  width: 100%;
+  margin-top: -54%;
+}
+
+.language-section-two{
+  margin-top: 8%;
+  background-color: #001220;
+  height: 80vh;
+  padding-top: 8%;
+  padding-bottom: 20%;
+}
+
+.content-container{
+  width: 90%;
+}
+
+.content-container{
+  height: 50%;
+  width: 100vw;
+  margin-top: 3%;  
+  display: flex;
+}
+
+.latin-title{
+  margin-top: 2%;
+  margin-left: 24%;
+  font-size: 60px;
+  margin-bottom: 5%;
+  letter-spacing: 2px;
+  color: #F5E8C7;
+}
+
+.latin-subtitle {
+  margin-left: 12%;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+
+.roman-flag{
+  margin-top: 3%;
+  margin-left: 18%;
+  height: 240px;
+  width: 370px;
+}
+
+.content-latin-text{
+  width: 40%;
+  margin-left: 8%;
+}
+
+.content-latin-text p{
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color:#F5E8C7;
+}
+
+.content-latin-imgs{
+  width: 50%;
+  margin-top: 2.5%;
+}
+
+.content-box-latin{
+  background-image: linear-gradient(to bottom, transparent, black);
+  width: 25%;
+  height: 50%;
+  right: 12%;
+  margin-top: -3%;
+  border-radius: 1%;
+  position: absolute;
+  z-index: 5;
+}
+
+.cesar-img{
+  position: absolute;
+  margin-top: -12.4%;
+  z-index: 1;
+  right: 5%;
+  height: 70%;
+}
+
+
+/*language section three*/
+
+.language-section-three{
+  background-color: #001220;
+  height: 100vh;
+  padding-top: 5%;
+  padding-bottom: 28%;
+}
+
+.greek-title{
+  padding-top:10%;
+  right: 27%;
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #F5E8C7;
+  position: absolute;
+}
+
+.greek-subtitle{
+  padding-top: 19%;
+  letter-spacing: 1px;
+  color: #fff;
+  right: 16%;
+  position: absolute;
+}
+
+.greek-flag {
+  height: 240px;
+  margin-top: 25%;
+  right: 20%;
+  position: absolute;
+  width: 370px;
+}
+
+.container-greek-text{
+  position: absolute;
+  width: 40%;
+  right: 10%;
+  margin-top: 40%;
+}
+
+.container-greek-text p{
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color:#F5E8C7;
+}
+
+.content-greek-img{
+  width: 50%;
+  margin-top: 15%;
+  position: absolute;
+}
+
+
+.content-box-greek{
+  background-image: linear-gradient(to bottom, transparent, black);
+  width: 71%;
+  height: 60%;
+  margin-left: 10%;
+  margin-top: 37%;
+  border-radius: 1%;
+  position: absolute;
+  z-index: 1;
+}
+
+.hercules-img{
+  z-index: 5;
+  height: 60vh;
+  margin-left: -15%;
+  margin-top: 28%;
+}
+
+}
