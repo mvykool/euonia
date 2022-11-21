@@ -303,6 +303,7 @@ body{
 	left: 5.4vw;
 	background-repeat: no-repeat;
 	background-size: cover;
+  cursor: pointer;
 	transform: rotateZ(-45deg);
 	content: "";
 	width: 48vw;
@@ -340,6 +341,7 @@ body{
 	left: -11.3vw;
 	background-repeat: no-repeat;
 	background-size: cover;
+  cursor: pointer;
 	transform: rotateZ(-45deg);
 	content: "";
 	width: 39vw;
@@ -413,6 +415,7 @@ body{
 	left: -20vw;
 	width: 45.1vw;
 	height: 40vw;
+  cursor: pointer;
 	background-repeat: no-repeat;
 	background-size: cover;
 	transform: rotateZ(-45deg);
@@ -465,14 +468,14 @@ body{
 .languages{
   position: absolute;
   background-color: #826F66;
-  height: 90vh;
+  height: 70vh;
   width: 100vw;
   padding-bottom: 10%;
 }
 
 .languages-top{
   position: absolute;
-  margin-top: 12%;
+  margin-top: 10%;
   width: 100vw;
   height: 20vh;
 
@@ -485,25 +488,6 @@ body{
   color: #F5E8C7;
 }
 
-.content-container{
-  border: 1px solid white;
-  height: 50%;
-  width: 100vw;
-  margin-top: 20%;  
-  display: flex;
-}
-
-.content-roman{
-  border: 1px solid red;
-  width: 50%;
-  margin-top: 2.5%;
-}
-
-.content-greek{
-  border: 1px solid blue;
-  width: 50%;
-  margin-top: 2.5%;
-}
 
 .content-container-text{
 
@@ -524,26 +508,26 @@ body{
   width: 20%;
   height: 30%;
   margin-left: 15.8%;
-  margin-top: 6.7%;
+  margin-top: 2%;
   border-radius: 1%;
   position: absolute;
 }
 
 .content-pic{
   width: 50%;
-  margin-top: 2.5%;
+  margin-top: 2%;
   
 }
 
 .language-img{
   position: absolute;
   height: 40%;
-  margin-left: 19.8%;
-  margin-top: 1%;
+  margin-left: 22.5%;
+  margin-top: -2.8%;
 }
 
 .content-text-title{
-  margin-top: 8%;
+  margin-top: 3%;
   width: 60%;
   right: 20%;
   font-size: 38px;
@@ -556,20 +540,178 @@ body{
   letter-spacing: 1px;
   margin: 2%;
   font-size: 20px;
-  margin-top: 9%;
+  margin-top: 7%;
   color: white;
 }
 
 /*section two*/
 
+.wave-language{
+  width: 100%;
+  margin-top: -54%;
+}
+
 .language-section-two{
-  margin-top: 13.8%;
+  margin-top: 8%;
   background-color: #001220;
-  height: 70vh;
+  height: 80vh;
   padding-top: 8%;
-  padding-bottom: 10%;
+  padding-bottom: 20%;
 }
 
 .content-container{
   width: 90%;
 }
+
+.content-container{
+  height: 50%;
+  width: 100vw;
+  margin-top: 3%;  
+  display: flex;
+}
+
+.latin-title{
+  margin-top: 2%;
+  margin-left: 24%;
+  font-size: 60px;
+  margin-bottom: 5%;
+  letter-spacing: 2px;
+  color: #F5E8C7;
+}
+
+.latin-subtitle {
+  margin-left: 12%;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+
+.roman-flag{
+  margin-top: 3%;
+  margin-left: 18%;
+  height: 240px;
+  width: 370px;
+}
+
+.content-latin-text{
+  width: 40%;
+  margin-left: 8%;
+}
+
+.content-latin-text p{
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color:#F5E8C7;
+}
+
+.content-latin-imgs{
+  width: 50%;
+  margin-top: 2.5%;
+}
+
+.content-box-latin{
+  background-image: linear-gradient(to bottom, transparent, black);
+  width: 25%;
+  height: 50%;
+  right: 12%;
+  margin-top: -3%;
+  border-radius: 1%;
+  position: absolute;
+  z-index: 5;
+}
+
+.cesar-img{
+  position: absolute;
+  margin-top: -12.4%;
+  z-index: 1;
+  right: 5%;
+  height: 70%;
+}
+
+
+/*language section three*/
+
+.language-section-three{
+  background-color: #001220;
+  height: 100vh;
+  padding-top: 5%;
+  padding-bottom: 28%;
+}
+
+.greek-title{
+  padding-top:10%;
+  right: 27%;
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #F5E8C7;
+  position: absolute;
+}
+
+.greek-subtitle{
+  padding-top: 19%;
+  letter-spacing: 1px;
+  color: #fff;
+  right: 16%;
+  position: absolute;
+}
+
+.greek-flag {
+  height: 240px;
+  margin-top: 25%;
+  right: 20%;
+  position: absolute;
+  width: 370px;
+}
+
+.container-greek-text{
+  position: absolute;
+  width: 40%;
+  right: 10%;
+  margin-top: 40%;
+}
+
+.container-greek-text p{
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color:#F5E8C7;
+}
+
+.content-greek-img{
+  width: 50%;
+  margin-top: 15%;
+  position: absolute;
+}
+
+
+.content-box-greek{
+  background-image: linear-gradient(to bottom, transparent, black);
+  width: 71%;
+  height: 60%;
+  margin-left: 10%;
+  margin-top: 37%;
+  border-radius: 1%;
+  position: absolute;
+  z-index: 1;
+}
+
+.hercules-img{
+  z-index: 5;
+  height: 60vh;
+  margin-left: -15%;
+  margin-top: 28%;
+}
+
+/* art and sculptrures section*/
+
+.art-body{
+  height:100vh;
+  width: 100vw;
+  background-color: #001220;
+  overflow-x: hidden;
+  position: absolute;
+  z-index: 500;
+  padding-bottom:100%;
+}
+

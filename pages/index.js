@@ -12,19 +12,8 @@ const sectionVariant = {
   }
 }
 
-const titleVar = {
-  hidden: { opacity: 0, x: -10000},
-  show: { opacity: 1, x: 0,
-  transition: { duration: 1}
-  }
-}
 
-const aboutVar = {
-  hidden: { opacity: 0, x: 300},
-  show: { opacity: 1, x: 0,
-  transition: { duration: 1}
-  }
-}
+
 
 export default function Home() {
   return (
@@ -42,7 +31,7 @@ export default function Home() {
 
         <div className='home-container'>
          <motion.div className='home-box-title'
-         variants={titleVar}
+         variants={sectionVariant}
          initial="hidden"
          animate="show"
          
@@ -84,7 +73,7 @@ export default function Home() {
 
     
     <motion.div
-    variants={aboutVar}
+    variants={sectionVariant}
     initial="hidden"
     whileInView="show"
     viewport={{ once: true }}
@@ -146,8 +135,15 @@ export default function Home() {
 
     </motion.div>
     <img src="/wave2.svg" className='wave-two' alt='wave2' />
+
+  
    <div className="heroImageGrid">
-	<div className="container">
+	<motion.div className="container"
+  variants={sectionVariant}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true }}
+  >
 		<div className="column"></div>
 		<div className="column">
 			<div className="row"></div>
@@ -159,7 +155,7 @@ export default function Home() {
 			</div>
 			<div className="row"></div>
 		</div>
-	</div>
+	</motion.div>
 </div>
 
 
